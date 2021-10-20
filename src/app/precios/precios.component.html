@@ -1,0 +1,17 @@
+<h1>PRECIOS HISTÓRICOS</h1>
+<ul class="list-group lista">
+    <div class="lista__boton">   
+        <a [routerLink]="['/']" class="btn btn-success">Volver</a>
+    </div>
+    <h2 class="titulo__precio"> {{nombre[3]}} </h2>
+    <li *ngFor="let precio of precios" class="list-group-item lista__item lista__precios">
+        
+        <div class="lista__textos">
+            <h2 class="lista__nombre lista__fecha" id="nombre"><span class="lista__resaltado">Fecha:</span>  {{precio.fecha}} </h2>
+        </div>
+        <div class="lista__botones lista__valor">
+            <h3 class="lista__valortotal"> $ {{precio.valor}} </h3>
+        </div>
+    </li>
+</ul>
+

@@ -1,0 +1,47 @@
+$azul: #1978b8
+    
+.lista
+    border-radius: 1px
+    
+.lista__item:nth-child(1)
+  display: none
+
+.lista__item:nth-child(2)
+    display: none
+
+.lista__item:nth-child(3)
+    display: none
+
+.lista__item:nth-child(4)
+    border-top-width: 1px
+
+.lista__item
+    padding: 15px
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+
+.lista__textos
+    display: flex
+    flex-direction: column
+
+.lista__valor
+    font-size: 18px
+    font-weight: bold
+
+.lista__detalle
+    margin-left: 10px
+    background: $azul
+
+.lista__detalle:hover
+    opacity: 0.9
+
+.lista__botones
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: center
+
+.lista__botones .lista__historial
+    margin-bottom: 10px

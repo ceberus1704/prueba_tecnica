@@ -1,0 +1,17 @@
+<h1>DETALLE</h1>
+<div class="lista__boton">   
+    <a [routerLink]="['/']" class="btn btn-success">Volver</a>
+</div>
+<h2 class="titulo__detalle"> {{detalle.nombre}} </h2>
+<div class="texto__detalle">
+    <h3 class="valor_h3"><span class="valor__detalle"> $ {{detalle.serie[0].valor}} </span></h3>
+    <div class="contenedor__fecha__detalle">
+        <span class="titulo__fecha__detalle">Fecha</span>
+        <span class="fecha__detalle"> {{detalle.serie[0].fecha}} </span>
+    </div>
+    <div class="contenedor__fecha__detalle">
+        <span class="titulo__fecha__detalle">Medida</span>
+        <span class="fecha__detalle"> {{detalle.unidad_medida}} </span>
+    </div>
+</div>
+

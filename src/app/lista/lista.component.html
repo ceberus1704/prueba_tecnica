@@ -1,0 +1,14 @@
+<h1>INDICADORES</h1>
+<ul class="list-group lista">
+    <li *ngFor="let indicator of indicators" class="list-group-item lista__item">
+        <div class="lista__textos">
+            <h2 class="lista__nombre" id="nombre"> {{indicator.nombre}} </h2>
+            <span class="lista__valor"> ${{indicator.valor}} </span>
+            <span class="lista__medida" id="unidad-de-medida"> {{indicator.unidad_medida}} </span>
+        </div>
+        <div class="lista__botones">
+            <a [routerLink]="['/precios', indicator.codigo]" class="lista__historial btn btn-success" href="">Precios</a>
+            <a [routerLink]="['/detalle', indicator.codigo]" class="lista__detalle btn btn-primary" href="">Detalle</a>
+        </div>
+    </li>
+</ul>
